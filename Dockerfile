@@ -6,4 +6,8 @@ USER jovyan
 
 RUN  conda install -c conda-forge bash_kernel
 
+RUN apt-get update && \
+    apt-get install screen && \
+    apt-get clean
+
 WORKDIR /home/jovyan/work
