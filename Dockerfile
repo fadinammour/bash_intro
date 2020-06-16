@@ -6,7 +6,8 @@ USER root
 RUN apt-get update && \
     apt-get -y install screen && \
     apt-get clean
-    export TERM='vt100'
+
+ARG TERM='vt100'
 
 USER jovyan
 RUN  conda install -c conda-forge bash_kernel
