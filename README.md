@@ -17,7 +17,7 @@ To start this tutorial, it is possible to launch it online using Binder with no 
 Click on [this link](https://mybinder.org/v2/gh/fadinammour/bash_intro/master?filepath=.%2Fbasics.ipynb) to launch the tutorial.
 
 ### Docker
-1. Pull the 
+0. Install [Docker](https://www.docker.com/products/docker-desktop) 
 
 
 `docker run -p 8889:8889 -v ${PWD}:/home/jovyan/work/:rw -it fadinammour/bash-intro start-notebook.sh --NotebookApp.port=8889 --NotebookApp.token=''`
