@@ -19,3 +19,5 @@ The goal of this tutorial is to introduce researchers to bash and scripting. It 
 ## Acknowledgements
 
 ## Resources
+
+[← Previous section](README.md) <div style="text-align: right"> [Next section →](basics.ipynb) </div>
