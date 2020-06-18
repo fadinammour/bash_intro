@@ -3,9 +3,9 @@
 The goal of this tutorial is to introduce researchers to bash and scripting. It is a short tutorial that shows major concepts with use cases related to research work.
 
 ---
-> Authors: <font color='#f78c40'>[Fadi Nammour](http://www.cosmostat.org/people/fadi-nammour)</font>  
+> Authors: <font color='#f78c40'>[Fadi Nammour](http://www.cosmostat.org/people/fadi-nammour) , [Julien N. Girard](https://www.cosmostat.org/people/julien-girard)</font>  
 > Year: 2020  
-> Email: [fadi.nammour@cea.fr](mailto:fadi.nammour@cea.fr)
+> Email: [fadi.nammour@cea.fr](mailto:fadi.nammour@cea.fr), [julien.girard@cea.fr](mailto:julien.girard@cea.fr)
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Click on the following icon to launch the tutorial [![Binder](https://mybinder.o
 > *Note 3* The number `8889` here corresponds to the port number of the local machine. In case this number is changed, it should be also be changed in the previous step.
 
 ## Acknowledgements
-This work has been made easier thanks to the valuable help and assistance of [Julien N. Girard](https://www.cosmostat.org/people/julien-girard), [Samuel Farren](https://sfarrens.github.io/) and [François Lanusse](http://www.flanusse.net/).
+This work has been made easier thanks to the valuable help and assistance of [Samuel Farren](https://sfarrens.github.io/) and [François Lanusse](http://www.flanusse.net/).
 
 ## Resources
 
