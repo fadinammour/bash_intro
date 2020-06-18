@@ -5,6 +5,7 @@ LABEL Description="Jupyter Bash"
 USER root
 RUN apt-get update && \
     apt-get -y install screen && \
+    apt-get install tree && \
     apt-get clean
 
 RUN export TERM=vt100
