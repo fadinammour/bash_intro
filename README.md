@@ -5,7 +5,7 @@ The goal of this tutorial is to introduce researchers to bash and scripting. It 
 ---
 > Authors: <font color='#f78c40'>[Fadi Nammour](http://www.cosmostat.org/people/fadi-nammour) , [Julien N. Girard](https://www.cosmostat.org/people/julien-girard)</font>  
 > Year: 2020  
-> Email: [fadi.nammour@cea.fr](mailto:fadi.nammour@cea.fr), [julien.girard@cea.fr](mailto:julien.girard@cea.fr)
+> Email: [fadi.nammour@cea.fr](mailto:fadi.nammour@cea.fr), [julien.girard@cea.fr](mailto:julien.girard@cea.fr) (screen segment)
 
 ## Table of Contents
 
