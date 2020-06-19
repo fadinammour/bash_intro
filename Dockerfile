@@ -7,6 +7,7 @@ RUN apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
     apt-get -y install man-db && \
+    apt-get -y install manpages-posix && \
     apt-get -y install info && \
     apt-get clean
 
