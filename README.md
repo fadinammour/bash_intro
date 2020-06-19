@@ -13,10 +13,9 @@ The goal of this tutorial is to introduce researchers to bash and scripting. It 
 2. [Basics](./basics.ipynb#basics)
 3. [Pipeline, pipes and filters](./pipeline.ipynb)
 4. [Bash Scripts](./scripting.ipynb)
-5. [Variables](./variables.ipynb)
-6. [Advanced](./advanced.ipynb)
-7. Acknowledgements
-8. Resources
+5. [Advanced](./advanced.ipynb)
+6. Acknowledgements
+7. Resources
 
 ## Launching the Tutorial
 To start this tutorial, it is possible to launch it online using Binder with no installation required, or install it and start it locally using Docker as follow:
