@@ -50,3 +50,4 @@ This tutorial was inspired by the following:
 
 Additionnal material:
 1. [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+2. [Bash scripting cheatsheet](https://devhints.io/bash)
