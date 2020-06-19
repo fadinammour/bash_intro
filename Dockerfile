@@ -6,6 +6,8 @@ USER root
 RUN apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
+    apt-get install man-db && \
+    apt-get install info && \
     apt-get clean
 
 RUN export TERM=vt100
