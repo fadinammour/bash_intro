@@ -3,10 +3,15 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
-RUN apt-get update && \
+RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:' \
+    /etc/dpkg/dpkg.cfg.d/excludes
+    apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
-    apt-get install man man-pages mdocml-apropos less less-doc && \
+    apt-get update && \
+    apt-get install -y \
+        man \
+        manpages-posix && \
     apt-get -y install info && \
     apt-get clean
 
