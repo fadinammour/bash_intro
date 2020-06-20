@@ -4,7 +4,7 @@ LABEL Description="Jupyter Bash"
 
 USER root
 RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:' \
-    /etc/dpkg/dpkg.cfg.d/excludes
+    /etc/dpkg/dpkg.cfg.d/excludes && \
     apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
