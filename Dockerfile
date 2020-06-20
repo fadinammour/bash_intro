@@ -6,7 +6,7 @@ USER root
 RUN apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
-    apt add man man-pages mdocml-apropos less less-doc && \
+    apt-get install man man-pages mdocml-apropos less less-doc && \
     apt-get -y install info && \
     apt-get clean
 
