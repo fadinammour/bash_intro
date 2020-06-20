@@ -6,8 +6,7 @@ USER root
 RUN apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
-    apt-get -y install man-db && \
-    apt-get -y install manpages-posix && \
+    apk add man man-pages mdocml-apropos less less-doc && \
     apt-get -y install info && \
     apt-get clean
 
@@ -18,6 +17,7 @@ ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
+ENV PAGER less
 
 USER ${NB_USER}
 
