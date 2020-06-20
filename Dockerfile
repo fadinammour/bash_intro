@@ -3,16 +3,11 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
-RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:' \
-    /etc/dpkg/dpkg.cfg.d/excludes && \
+RUN yes y | unminimize && \
     apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
     apt-get update && \
-    apt-get install -y \
-        man \
-        manpages-posix && \
-    apt-get -y install info && \
     apt-get clean
 
 RUN export TERM=vt100
