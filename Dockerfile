@@ -3,9 +3,8 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
-RUN apt-get update && yes | unminimize
-
-RUN apt-get -y install screen && \
+RUN apt-get update && \
+    apt-get -y install screen && \
     apt-get install tree && \
     apt-get update && \
     apt-get clean
@@ -26,4 +25,4 @@ RUN  conda install -c conda-forge bash_kernel
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
+#USER ${NB_USER}
