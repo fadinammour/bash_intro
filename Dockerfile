@@ -3,15 +3,9 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
-# Do not exclude man pages & other documentation
-RUN rm /etc/dpkg/dpkg.cfg.d/excludes
-# Reinstall all currently installed packages in order to get the man pages back
-RUN apt-get update && \
-    dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall && \
-    rm -r /var/lib/apt/lists/*
+RUN apt-get update && yes | unminimize
 
-RUN apt-get update && \
-    apt-get -y install screen && \
+RUN apt-get -y install screen && \
     apt-get install tree && \
     apt-get update && \
     apt-get clean
