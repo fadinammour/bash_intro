@@ -3,6 +3,7 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
+RUN yes y | unminimize
 RUN apt-get update && \
     apt-get -y install screen && \
     apt-get install tree && \
@@ -26,5 +27,3 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
-
-USER root
