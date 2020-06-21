@@ -3,7 +3,11 @@ FROM jupyter/base-notebook:python-3.7.6
 LABEL Description="Jupyter Bash"
 
 USER root
-RUN yes y | unminimize
+# Do not exclude man pages & other documentation
+RUN rm /etc/dpkg/dpkg.cfg.d/excludes
+# Reinstall all currently installed packages in order to get the man pages back
+    dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall && \
+    rm -r /var/lib/apt/lists/*
 
 RUN apt-get update && \
     apt-get -y install screen && \
@@ -18,7 +22,6 @@ ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
-ENV PAGER less
 
 USER ${NB_USER}
 
