@@ -25,4 +25,6 @@ RUN  conda install -c conda-forge bash_kernel
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
-#USER ${NB_USER}
+USER ${NB_USER}
+
+USER root
